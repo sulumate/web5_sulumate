@@ -6,6 +6,7 @@
   <meta name="description" content="Assignment 5 JavaScript basics, DOM manipulation and events by Sulukhan Aizharykova, SE-2529.">
   <title>JavaScript basics | JavaScript Lab</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/basics.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,9 +25,26 @@
     <div class="page-heading">
       <p class="eyebrow">WEB TECHNOLOGIES / ASSIGNMENT 05</p>
       <h1>JavaScript basics</h1>
-      <p class="intro">Part 1 · A first script, variables and operators.</p>
+      <p class="intro">Part 1 · A first script, variables and operators. Sulukhan Aizharykova, SE-2529.</p>
     </div>
-    <section class="card"><h2>Assignment 5</h2><p>Select a part using the navigation bar.</p></section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="first-script-title">
+        <p class="task-label">Task 0</p>
+        <h2 id="first-script-title">Hello, JavaScript</h2>
+        <p>The external JavaScript file prints my name and group in the console and shows a greeting when this page opens.</p>
+        <p class="hint">Open your browser's Developer Tools → Console to see the script output.</p>
+        <button id="greeting-button" type="button">Show greeting again</button>
+      </section>
+      <section class="card" aria-labelledby="variables-title">
+        <p class="task-label">Task 1</p>
+        <h2 id="variables-title">Variables and operators</h2>
+        <p>String, number and boolean variables, arithmetic and string concatenation. The results also appear in the console.</p>
+        <pre id="variables-output" class="result"></pre>
+      </section>
+    </div>
+    <div class="actions"><a class="button" href="dom.html">Continue to DOM →</a></div>
+
   </main>
   <footer class="shell site-footer">
     <span>Sulukhan Aizharykova <span aria-hidden="true">/</span> SE-2529</span>
