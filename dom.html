@@ -6,6 +6,7 @@
   <meta name="description" content="Assignment 5 JavaScript basics, DOM manipulation and events by Sulukhan Aizharykova, SE-2529.">
   <title>DOM manipulation | JavaScript Lab</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/dom.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,9 +25,38 @@
     <div class="page-heading">
       <p class="eyebrow">WEB TECHNOLOGIES / ASSIGNMENT 05</p>
       <h1>DOM manipulation</h1>
-      <p class="intro">Part 2 · Change content, style elements and work with a list.</p>
+      <p class="intro">Part 2 · Change content, style elements and create or remove list items.</p>
     </div>
-    <section class="card"><h2>Assignment 5</h2><p>Select a part using the navigation bar.</p></section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="content-title">
+        <p class="task-label">Task 2</p>
+        <h2 id="content-title">Change the content</h2>
+        <p id="changeable-paragraph" class="result" aria-live="polite">This is the original paragraph.</p>
+        <div class="actions"><button id="change-text-button" type="button">Change text</button></div>
+      </section>
+      <section class="card" aria-labelledby="styles-title">
+        <p class="task-label">Task 3</p>
+        <h2 id="styles-title">Change the styles</h2>
+        <div id="style-block" class="demo-block">JavaScript can change my background color and font size.</div>
+        <div class="actions">
+          <button id="change-color-button" type="button">Change background</button>
+          <button id="change-size-button" class="secondary" type="button">Change font size</button>
+        </div>
+      </section>
+    </div>
+    <section class="card wide" aria-labelledby="items-title">
+      <p class="task-label">Task 4</p>
+      <h2 id="items-title">Create and remove elements</h2>
+      <p class="muted">Add a new list item or remove the last one.</p>
+      <div class="actions">
+        <button id="add-item-button" type="button">Add Item</button>
+        <button id="remove-item-button" class="secondary" type="button" disabled>Remove Item</button>
+      </div>
+      <ul id="item-list" class="list" aria-label="Demo items" aria-live="polite"></ul>
+      <p id="item-count" class="hint" role="status">0 items</p>
+    </section>
+
   </main>
   <footer class="shell site-footer">
     <span>Sulukhan Aizharykova <span aria-hidden="true">/</span> SE-2529</span>
