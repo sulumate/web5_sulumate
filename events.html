@@ -6,6 +6,7 @@
   <meta name="description" content="Assignment 5 JavaScript basics, DOM manipulation and events by Sulukhan Aizharykova, SE-2529.">
   <title>Events and calculator | JavaScript Lab</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/events.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,9 +25,26 @@
     <div class="page-heading">
       <p class="eyebrow">WEB TECHNOLOGIES / ASSIGNMENT 05</p>
       <h1>Events and calculator</h1>
-      <p class="intro">Part 3 · Respond to mouse and keyboard events, then calculate.</p>
+      <p class="intro">Part 3 · Respond to mouse and keyboard events.</p>
     </div>
-    <section class="card"><h2>Assignment 5</h2><p>Select a part using the navigation bar.</p></section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="mouse-title">
+        <p class="task-label">Task 5</p>
+        <h2 id="mouse-title">Mouse events</h2>
+        <p class="muted">Move your mouse over the box, then move it away.</p>
+        <div id="mouse-box" class="mouse-box">Hover over this box</div>
+      </section>
+      <section class="card" aria-labelledby="keyboard-title">
+        <p class="task-label">Task 6</p>
+        <h2 id="keyboard-title">Keyboard events</h2>
+        <label for="keyboard-input">Type something</label>
+        <input id="keyboard-input" type="text" placeholder="Start typing…" autocomplete="off">
+        <p class="hint">The value below updates on every keyup event.</p>
+        <p id="keyboard-output" class="result" aria-live="polite">Your text will appear here.</p>
+      </section>
+    </div>
+
   </main>
   <footer class="shell site-footer">
     <span>Sulukhan Aizharykova <span aria-hidden="true">/</span> SE-2529</span>
