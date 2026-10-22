@@ -25,7 +25,7 @@
     <div class="page-heading">
       <p class="eyebrow">WEB TECHNOLOGIES / ASSIGNMENT 05</p>
       <h1>Events and calculator</h1>
-      <p class="intro">Part 3 · Respond to mouse and keyboard events.</p>
+      <p class="intro">Part 3 · Mouse events, live keyboard input and four arithmetic operations.</p>
     </div>
 
     <div class="grid">
@@ -44,6 +44,29 @@
         <p id="keyboard-output" class="result" aria-live="polite">Your text will appear here.</p>
       </section>
     </div>
+
+    <section class="card wide" aria-labelledby="calculator-title">
+      <p class="task-label">Task 7</p>
+      <h2 id="calculator-title">A simple calculator</h2>
+      <p class="muted">Enter two numbers and choose an operation.</p>
+      <form id="calculator-form" novalidate>
+        <div class="calculator-fields">
+          <div><label for="first-number">First number</label><input id="first-number" name="firstNumber" type="number" step="any" placeholder="e.g. 12" required></div>
+          <div>
+            <label for="operation">Operation</label>
+            <select id="operation" name="operation">
+              <option value="add">+ Add</option>
+              <option value="subtract">− Subtract</option>
+              <option value="multiply">× Multiply</option>
+              <option value="divide">÷ Divide</option>
+            </select>
+          </div>
+          <div><label for="second-number">Second number</label><input id="second-number" name="secondNumber" type="number" step="any" placeholder="e.g. 4" required></div>
+        </div>
+        <div class="actions"><button type="submit">Calculate</button></div>
+        <output id="calculator-result" class="result" for="first-number second-number operation" aria-live="polite">The result will appear here.</output>
+      </form>
+    </section>
 
   </main>
   <footer class="shell site-footer">
